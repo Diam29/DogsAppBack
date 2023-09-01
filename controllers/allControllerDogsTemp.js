@@ -6,6 +6,7 @@ const { Dogs, Temperaments } = require('../db.js');
 
 // Traer todos los perros de Api
 
+
 const getDogsApi = async () => {
     const dogs = (await axios.get(URL)).data
 
