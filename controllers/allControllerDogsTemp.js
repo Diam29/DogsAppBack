@@ -9,7 +9,7 @@ const { Dogs, Temperaments } = require('../db.js');
 
 const getDogsApi = async () => {
     const dogs = (await axios.get(URL)).data
-
+    console.log('Estoy probando el push');
 
     const allDogs = dogs.map((dog) => {
         const heightMetric = dog.height.metric;
